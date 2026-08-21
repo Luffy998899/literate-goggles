@@ -1,0 +1,311 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Products | Kartikey Fasteners</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed": "#1a1c1e",
+                        "primary-fixed": "#ffdad8",
+                        "surface-container-high": "#292a2c",
+                        "secondary-fixed-dim": "#c6c6c9",
+                        "inverse-on-surface": "#303033",
+                        "on-secondary-fixed-variant": "#454749",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "surface-container": "#1f2022",
+                        "secondary-fixed": "#e2e2e5",
+                        "surface-variant": "#343537",
+                        "outline-variant": "#5b403f",
+                        "surface-bright": "#38393b",
+                        "surface-tint": "#ffb3b0",
+                        "on-primary-container": "#ffd3d1",
+                        "primary": "#ffb3b0",
+                        "steel-silver": "#94A3B8",
+                        "on-primary-fixed": "#410006",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#e3bebb",
+                        "secondary-container": "#454749",
+                        "on-primary-fixed-variant": "#930019",
+                        "surface": "#121315",
+                        "on-surface": "#e3e2e5",
+                        "tertiary-fixed": "#e0e2e7",
+                        "on-secondary-container": "#b4b5b7",
+                        "on-primary": "#68000f",
+                        "surface-container-highest": "#343537",
+                        "primary-container": "#be1e2d",
+                        "inverse-primary": "#b91a2a",
+                        "tertiary": "#c4c6cb",
+                        "surface-container-lowest": "#0d0e10",
+                        "surface-container-low": "#1b1c1e",
+                        "error-container": "#93000a",
+                        "tertiary-container": "#5f6266",
+                        "on-secondary": "#2f3133",
+                        "inverse-surface": "#e3e2e5",
+                        "background": "#121315",
+                        "on-tertiary-fixed-variant": "#44474b",
+                        "outline": "#aa8987",
+                        "surface-dim": "#121315",
+                        "on-tertiary-container": "#dcdee3",
+                        "on-tertiary": "#2d3135",
+                        "industrial-red-dark": "#8B1521",
+                        "safety-yellow": "#FACC15",
+                        "on-error-container": "#ffdad6",
+                        "secondary": "#c6c6c9",
+                        "on-background": "#e3e2e5",
+                        "on-tertiary-fixed": "#191c20",
+                        "tertiary-fixed-dim": "#c4c6cb"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "element-gap": "1.5rem",
+                        "section-padding-lg": "8rem",
+                        "section-padding-sm": "4rem",
+                        "gutter": "2rem",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "stat-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"]
+                    },
+                    fontSize: {
+                        "label-caps": ["14px", { lineHeight: "20px", letterSpacing: "0.1em", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "stat-lg": ["56px", { lineHeight: "1", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "headline-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-truncate-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar Shared Component -->
+<nav class="bg-surface dark:bg-surface w-full top-0 sticky border-b border-steel-silver/20 z-50">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md text-on-surface dark:text-on-surface tracking-tighter hover:text-primary transition-colors duration-200" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpz2QoN20O2BHd97aBd9AHf_S_g5WmAhKD_p4HdZNwDvUG7SC7P776dTToMxrlL1FhEnfm75_HAV52yebTc0frfbhwTramPf_bL8k_0Z88rtjANsjEl8siCGddM5bz7BMVbMb5CpG1l3MN0bixENxxFWC91CLvd3MdEBJpdx14bR9LHafGtRfzv3dzAKMEQbHZByd8qsuRujG9re7e0mSy1y8BFHuT3ncIu3_1u1o2ycqKQg_XaIfZeG5iuzEk-bbRow" alt="KARTIKEY FASTENERS" class="h-8 w-auto"></a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center space-x-element-gap">
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 active:scale-95 duration-150" href="#">Products</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-container-high transition-all duration-200 px-3 py-2 rounded-DEFAULT active:scale-95 duration-150" href="#">Infrastructure</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-container-high transition-all duration-200 px-3 py-2 rounded-DEFAULT active:scale-95 duration-150" href="#">About Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-container-high transition-all duration-200 px-3 py-2 rounded-DEFAULT active:scale-95 duration-150" href="#">Certifications</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-container-high transition-all duration-200 px-3 py-2 rounded-DEFAULT active:scale-95 duration-150" href="#">Contact</a>
+</div>
+<!-- Actions (Desktop & Mobile) -->
+<div class="flex items-center space-x-4">
+<!-- Search Icon -->
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200 p-2">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<!-- CTA -->
+<a class="hidden md:inline-flex items-center justify-center bg-industrial-red-dark hover:bg-industrial-red-dark/90 text-white font-label-caps text-label-caps px-6 py-3 rounded-none transition-colors border-l-4 border-safety-yellow active:scale-95 duration-150" href="#">
+                    Request Quote
+                </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col">
+<!-- Header Section -->
+<header class="bg-surface-container-lowest pt-section-padding-sm pb-gutter px-gutter">
+<div class="max-w-container-max mx-auto text-center md:text-left">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-on-surface mb-6">
+                    Engineered Precision.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto md:mx-0">
+                    Explore our comprehensive range of high-performance fasteners. From low carbon to high tensile steel, designed for the most demanding industrial applications globally.
+                </p>
+</div>
+</header>
+<!-- Product Catalog Section -->
+<section class="py-section-padding-sm px-gutter bg-background flex-grow">
+<div class="max-w-container-max mx-auto">
+<!-- Filters and Controls -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 space-y-6 md:space-y-0 border-b border-steel-silver/20 pb-6">
+<!-- Filter Groups -->
+<div class="flex flex-wrap gap-4 w-full md:w-auto">
+<!-- Material Filter -->
+<div class="relative w-full md:w-auto group">
+<button class="w-full md:w-48 bg-transparent border-b border-steel-silver focus-within:border-industrial-red-dark text-left py-2 px-1 flex justify-between items-center text-on-surface font-body-md transition-colors">
+<span class="opacity-70">Material</span>
+<span class="material-symbols-outlined text-lg">arrow_drop_down</span>
+</button>
+</div>
+<!-- Size Filter -->
+<div class="relative w-full md:w-auto group">
+<button class="w-full md:w-48 bg-transparent border-b border-steel-silver focus-within:border-industrial-red-dark text-left py-2 px-1 flex justify-between items-center text-on-surface font-body-md transition-colors">
+<span class="opacity-70">Size / Thread</span>
+<span class="material-symbols-outlined text-lg">arrow_drop_down</span>
+</button>
+</div>
+<!-- Sector Filter -->
+<div class="relative w-full md:w-auto group">
+<button class="w-full md:w-48 bg-transparent border-b border-steel-silver focus-within:border-industrial-red-dark text-left py-2 px-1 flex justify-between items-center text-on-surface font-body-md transition-colors">
+<span class="opacity-70">Industry Sector</span>
+<span class="material-symbols-outlined text-lg">arrow_drop_down</span>
+</button>
+</div>
+</div>
+<!-- View Toggles (Optional layout control) -->
+<div class="hidden md:flex space-x-2">
+<button class="p-2 text-primary border border-steel-silver/30 rounded-DEFAULT bg-surface-container-high">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors border border-transparent">
+<span class="material-symbols-outlined">view_list</span>
+</button>
+</div>
+</div>
+<!-- Products Grid (Bento/Card Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1: Cold Forged Low/Medium Carbon -->
+<div class="group relative overflow-hidden bg-surface-container-lowest border border-steel-silver/20 hover:border-steel-silver/50 transition-all duration-300 flex flex-col h-full">
+<div class="relative h-64 w-full overflow-hidden bg-surface">
+<div class="bg-cover bg-center w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="High-contrast grayscale macro photography of cold forged low carbon steel bolts arranged in a neat row against a dark industrial surface, sharp directional lighting, stark shadows, premium technical aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDbk_Ab3rjtPBnmXRSqnM9TkARUy-N1C1LAnetckSwcbhrpa1cMp3TXy-VCdb8hOWIWuhYia7oojLMwuRul7PmZLzOu1fyr0s_AnNfAse8QT6zKf3GZiO0ui6NnAO4ckxDwLe3u4RpStytKq5BjPF7TNwWYWjLNzL-TRDMTLOTR4KhC5PCco4N4G483R9yULNnZLdHmjIh4JXFZG5cripMqwbdVgmS2doy4IQ3_KDRtZPy74-v22a59&quot;);"></div>
+<!-- Overlay on Hover -->
+<div class="absolute inset-0 bg-industrial-red-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+<h3 class="font-headline-md text-headline-md text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    Low/Medium Carbon Steel
+                                </h3>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow bg-surface-container-low relative z-10">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile md:text-2xl text-on-surface mb-2 font-bold group-hover:text-primary transition-colors">Cold Forged Fasteners</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-truncate-2 flex-grow">
+                                High-volume, structurally sound low and medium carbon fasteners. Ideal for general automotive assembly, structural framing, and high-tolerance commercial applications.
+                            </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-caps text-label-caps text-steel-silver">ISO 898-1 Class 4.6 - 8.8</span>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-steel-silver hover:border-primary text-white hover:text-primary font-label-caps text-label-caps px-4 py-2 transition-colors duration-200" href="#">
+                                    Request Quote
+                                </a>
+</div>
+</div>
+</div>
+<!-- Product Card 2: High Tensile Steel -->
+<div class="group relative overflow-hidden bg-surface-container-lowest border border-steel-silver/20 hover:border-steel-silver/50 transition-all duration-300 flex flex-col h-full">
+<div class="relative h-64 w-full overflow-hidden bg-surface">
+<div class="bg-cover bg-center w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="Close up shot of high tensile steel hex bolts with a slight oily sheen, resting on a brushed metal workbench, deep blacks and metallic reflections, heavy duty engineering feel." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAomSLsSTiN3aYIOm_95Jx-Zzg1coubBES9n_RbVA_b9PTCJwc1f3aEOpkIEEUa_WIRfnp-Cp88b5cUOHas30v0F1CI--nXlurnYijQg5B2kp9NMj-ablog2DGw8FEQniOspHvXnIvuxvSq5ccatvb6m678NHC8fqN63r4nGuAvrtgtHoPLF7cZGVCNqTGsNOB9O7f6GTfegHdbfkNTYJg_l_zPTnc5tk7ufmYblsLgLW_aLJ_-kpyY&quot;);"></div>
+<!-- Overlay on Hover -->
+<div class="absolute inset-0 bg-industrial-red-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+<h3 class="font-headline-md text-headline-md text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    High Tensile Steel
+                                </h3>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow bg-surface-container-low relative z-10">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile md:text-2xl text-on-surface mb-2 font-bold group-hover:text-primary transition-colors">High-Stress Applications</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-truncate-2 flex-grow">
+                                Engineered for extreme load-bearing environments. Manufactured utilizing advanced heat treatment processes to ensure maximum yield strength and fatigue resistance in heavy machinery.
+                            </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-caps text-label-caps text-steel-silver">ISO 898-1 Class 10.9 - 12.9</span>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-steel-silver hover:border-primary text-white hover:text-primary font-label-caps text-label-caps px-4 py-2 transition-colors duration-200" href="#">
+                                    Request Quote
+                                </a>
+</div>
+</div>
+</div>
+<!-- Product Card 3: Stainless Steel -->
+<div class="group relative overflow-hidden bg-surface-container-lowest border border-steel-silver/20 hover:border-steel-silver/50 transition-all duration-300 flex flex-col h-full">
+<div class="relative h-64 w-full overflow-hidden bg-surface">
+<div class="bg-cover bg-center w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="Pristine stainless steel screws and nuts scattered meticulously on a pure white clinical surface, very high key lighting, extreme contrast between the bright metal and white background, precision manufacturing." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCMgCBBsVq11hLIfb0aI2OqWYNk6czozQDW94X1ZwM36s1NdQWFRYVqoEsMA_SHT8Mm6WIubqsjNT_6AJvd_2QW0gH4p1PlV1cFGW7z7LFWljGxQqbxO-3nvAmrnxDXK_r90G-TuB2qUFeDUu3qx_RiZQxrEXNQIVEeDDfu2QtPE8lcSiKmBOy2-ulqJadFKfLzYH0cJ0oIFEOH06UgPRJtekCtCl5C-YG5YuL-1FsttejDmJifX3T8&quot;);"></div>
+<!-- Overlay on Hover -->
+<div class="absolute inset-0 bg-industrial-red-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+<h3 class="font-headline-md text-headline-md text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    Stainless Steel Range
+                                </h3>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow bg-surface-container-low relative z-10">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile md:text-2xl text-on-surface mb-2 font-bold group-hover:text-primary transition-colors">Corrosion Resistant</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-truncate-2 flex-grow">
+                                Premium austenitic stainless steel fasteners designed for harsh chemical, marine, and food-grade environments where superior corrosion resistance is non-negotiable.
+                            </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-caps text-label-caps text-steel-silver">A2 (304) &amp; A4 (316)</span>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-steel-silver hover:border-primary text-white hover:text-primary font-label-caps text-label-caps px-4 py-2 transition-colors duration-200" href="#">
+                                    Request Quote
+                                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full pt-section-padding-sm pb-gutter border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col space-y-4">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg28cXMY-hZPSHrro14fto4iRbrftTP4AC4N888eKHmQD7vbMSmgU3JOP4n0Ag0LTXljDXZd9UjD1FP5JgkBfjdYZpJcjOxSsu0ag9ZfKu3IE_nHOpr9OFDhzJ5yxAwq9G7-2Ers4_I197gji-38UvR_eUl9BKazzDfzbje0AA9aNm0JClyXx3Lz5Yed9tgLUwaGdwhN-vknkLl2Hsl4lxaok0N3aAL52eRVIJzd4BYwDIhgkU22BwW9lshyAReITWiw" alt="KARTIKEY FASTENERS" class="h-8 w-auto mb-4">
+<p class="font-body-md text-body-md text-on-secondary-container">© 2024 Kartikey Fasteners. Engineering Precision for 40 Years.</p>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 md:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<!-- Column 1 -->
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors underline decoration-industrial-red-dark" href="#">Custom Inquiries</a>
+<a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors underline decoration-industrial-red-dark" href="#">Global Exporting</a>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors underline decoration-industrial-red-dark" href="#">Technical Specs</a>
+</div>
+<!-- Column 3 -->
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors underline decoration-industrial-red-dark" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors underline decoration-industrial-red-dark" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
