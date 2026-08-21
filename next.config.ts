@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
    * the node_modules actually reached at runtime. On a 1 GB shared box that is
    * the difference between shipping ~400 MB of dependencies and ~60 MB.
    */
-  output: "standalone",
 
   // The build box has one core and one thread. Letting Next fan out to a worker
   // pool it does not have just thrashes and OOMs.
