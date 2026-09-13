@@ -57,6 +57,7 @@ export default function SiteFooter() {
 
   <ul className="font-body space-y-4 text-sm text-muted">
 
+    {/* Address */}
     <li className="flex gap-3">
       <Pin className="mt-0.5 size-4 shrink-0 text-accent" />
 
@@ -67,18 +68,32 @@ export default function SiteFooter() {
       </span>
     </li>
 
-    <li className="mt-1">
+    {/* Google Maps */}
+    <li>
+      <div className="mt-2 overflow-hidden border border-white/15">
+        <iframe
+          src="https://www.google.com/maps?q=Plot+No.+166,+Phase+9,+Industrial+Area,+Mohali,+Punjab+160062&output=embed"
+          width="100%"
+          height="220"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+          title="Kartikey Fasteners Location"
+        />
+      </div>
+
       <a
         href="https://maps.app.goo.gl/JFwGV4PZMK2xVGcC9?g_st=iwb"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 border border-accent/40 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-accent transition-colors hover:border-accent hover:bg-accent hover:text-navy"
+        className="mt-3 inline-flex items-center text-xs font-semibold uppercase tracking-wider text-accent transition-colors hover:text-white"
       >
-        <Pin className="size-3.5" />
-        View on Google Maps
+        View larger map →
       </a>
     </li>
 
+    {/* Phone */}
     <li className="flex gap-3">
       <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
 
@@ -90,6 +105,7 @@ export default function SiteFooter() {
       </a>
     </li>
 
+    {/* Hours */}
     <li className="flex gap-3">
       <Clock className="mt-0.5 size-4 shrink-0 text-accent" />
 
