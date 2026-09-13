@@ -53,32 +53,55 @@ export default function SiteFooter() {
 
         {/* Reach */}
         <div>
-          <h4 className="label-caps mb-5 text-white">Reach Us</h4>
-          <ul className="font-body space-y-4 text-sm text-muted">
-            <li className="flex gap-3">
-              <Pin className="mt-0.5 size-4 shrink-0 text-accent" />
-              <span>
-                {company.address.line1}
-                <br />
-                {company.address.line2}
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
-              <a href={company.phoneHref} className="hover:text-white">
-                {company.phone}
-              </a>
-            </li>
-            <li className="flex gap-3">
-              <Clock className="mt-0.5 size-4 shrink-0 text-accent" />
-              <span>
-                {company.hours}
-                <br />
-                {company.days}
-              </span>
-            </li>
-          </ul>
-        </div>
+  <h4 className="label-caps mb-5 text-white">Reach Us</h4>
+
+  <ul className="font-body space-y-4 text-sm text-muted">
+
+    <li className="flex gap-3">
+      <Pin className="mt-0.5 size-4 shrink-0 text-accent" />
+
+      <span>
+        {company.address.line1}
+        <br />
+        {company.address.line2}
+      </span>
+    </li>
+
+    <li className="mt-1">
+      <a
+        href="https://maps.app.goo.gl/JFwGV4PZMK2xVGcC9?g_st=iwb"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 border border-accent/40 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-accent transition-colors hover:border-accent hover:bg-accent hover:text-navy"
+      >
+        <Pin className="size-3.5" />
+        View on Google Maps
+      </a>
+    </li>
+
+    <li className="flex gap-3">
+      <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
+
+      <a
+        href={company.phoneHref}
+        className="hover:text-white"
+      >
+        {company.phone}
+      </a>
+    </li>
+
+    <li className="flex gap-3">
+      <Clock className="mt-0.5 size-4 shrink-0 text-accent" />
+
+      <span>
+        {company.hours}
+        <br />
+        {company.days}
+      </span>
+    </li>
+
+  </ul>
+</div>
 
         {/* Desks */}
         <div>
