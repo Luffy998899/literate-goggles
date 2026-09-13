@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+          output: "standalone",
   /**
    * `standalone` emits .next/standalone with a self-contained server.js and only
    * the node_modules actually reached at runtime. On a 1 GB shared box that is
